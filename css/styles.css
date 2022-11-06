@@ -1,0 +1,189 @@
+html {
+    font-size: 62.5%
+}
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.enlaces {
+    list-style: none;
+    padding: 0%;
+    background: #c1bbb2;
+    width: 100%;
+    height: 10rem;
+    max-width: 100%;
+    margin: none;
+}
+
+.enlaces nav ul li a {
+    list-style: none;
+    color: black;
+    padding: 1.3rem;
+    display: block;
+
+}
+
+.enlaces li {
+    display: inline-block;
+    text-align:center;
+    margin: auto;
+    font-weight: bold;
+    margin-left: 13.5rem;
+}
+
+.logo {
+    width: 20rem;
+    margin-left: 51rem;
+}
+
+.logopie {
+    width: 15rem;
+}
+
+.piedepagina {
+    background-color: #c1bbb2;
+    color:black;
+    width: 100%;
+}
+
+.grupo1 {
+    width: 100%;
+    max-width: 75rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2.8rem 0rem;
+}
+
+.redessociales {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.bodyhistoria {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5REM;
+    background: url(/img/felix-itb1TbV5H7w-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+  
+}
+
+.textohistoria {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:beige;
+}
+
+.titulohistoria {
+    color:#c1bbb2;
+    font-size:3rem;
+}
+
+.bodyinicio {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5REM;
+    background: url(/img/jorgen-hendriksen-HsB4t2NvtLo-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+.citainicio {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color:rgb(189, 179, 179);
+    margin-right: 105rem;
+    margin-left: 2rem;
+}
+
+.bodyservicios {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5REM;
+    background: url(../img/The\ Bimmer\ Blog.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.servicios h1 {
+    font-size: 8rem;
+    color: #c1bbb2;
+    font-weight:bold;
+}
+.servicios p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: aliceblue;
+}
+.servicios h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #c1bbb2;
+}
+
+.galeria {
+    display: flex;
+    padding: 5px;
+}
+
+.columna {
+    flex: 15%;
+    padding: 3%
+}
+
+.bodycontacto {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    background: url(../img/haidong-liang-hcYPuEkX5Bc-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.formulario {
+    margin-top: 10rem;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #c1bbb2;
+    font-weight: bold;
+}
+
+.seccionmapa {
+    margin-top: 25rem;
+    margin-right: 200rem;
+    font-size: 3rem;
+    color: #c1bbb2;
+    font-weight: bold;
+}
