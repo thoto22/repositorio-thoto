@@ -1,6 +1,3 @@
-html {
-    font-size: 62.5%
-}
 * {
     margin: 0%;
     padding: 0%;
@@ -14,139 +11,217 @@ body {
     font-size: 1.5rem;
 }
 
-.enlaces {
-    list-style: none;
-    padding: 0%;
-    background: #c1bbb2;
-    width: 100%;
-    height: 10rem;
-    max-width: 100%;
-    margin: none;
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "nav header header"
+    "nav section section"
+    "nav section section"
+    "footer footer footer";
+    grid-template-rows: 100px 400px 400px 200px ;
+    grid-template-columns: 100px auto 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 0.5%;
 }
 
-.enlaces nav ul li a {
-    list-style: none;
-    color: black;
-    padding: 1.3rem;
-    display: block;
 
-}
-
-.enlaces li {
-    display: inline-block;
-    text-align:center;
-    margin: auto;
+nav {
+    grid-area: nav;
+    background-image: linear-gradient(to left, #ffffff, #6e6e6e);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 6rem;
     font-weight: bold;
-    margin-left: 13.5rem;
+    font-size: 0.9rem;
 }
 
-.logo {
-    width: 20rem;
-    margin-left: 51rem;
+li {
+    margin-left: 0.5rem;
+    list-style: none;
+    transition: margin-left 1s;
+}
+li:hover {
+    margin-left: 1rem;
 }
 
-.logopie {
-    width: 15rem;
+a {
+    text-decoration: none;
+    list-style: none;
+    color:#000000;
+    padding: 0.8rem;
 }
 
-.piedepagina {
-    background-color: #c1bbb2;
-    color:black;
-    width: 100%;
+header {
+    grid-area: header;
+    background-image: linear-gradient(to right, #ffffff, #2a2727);
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+section {
+    grid-area: section;
+    background-image:url(../img/jorgen-hendriksen-HsB4t2NvtLo-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+}
+
+.cita {
+    margin-left: 33rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+.autor {
+    margin-top: 41rem;
+    margin-right: 4rem;
+    font-size: 4rem;
+}
+
+
+footer {
+    grid-area: footer;
+    background-image: linear-gradient(to right, #ffffff, #474747);
+    text-align: center;
 }
 
 .grupo1 {
     width: 100%;
-    max-width: 75rem;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2.8rem 0rem;
+    margin-top: 1rem;
+    color: #000000;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .redessociales {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+}
+.derechosreservados {
+    font-size: 0.7rem;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+.logo {
+    height: 5.5rem;
+    margin-right: 7rem;
+    margin-top: 0rem;
+    max-width: 100%;
+    transition: height 2s; 
+    padding: 0.3rem;
 }
 
-.bodyhistoria {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5REM;
-    background: url(/img/felix-itb1TbV5H7w-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
+.logo:hover {
+    height: 5.8rem;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #000000;
+    }
+    
+    #grilla {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "section"
+        "footer";
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 100%;
+        row-gap: 10px;
+        padding: 0.5%;
+    }
+    
+    .logo {
+        margin-left: 8rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    footer {
+       text-align: center;
+    }
+    
+    .cita {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .autor {
+        font-size: 3rem;
+    }
+}
+
+.seccionservicios {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    text-align: center;
+    background-image: url(../img/amir-hosseini-p_bGwG123v0-unsplash.jpg);
+    background-size:cover;
+    background-position:center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.seccionservicios h1 {
+    color: #000000;
+    background-color: #474747;
+    padding: 1rem;
+    width: 10rem;
+    margin: auto;
+    
+}
+.seccionservicios h2{
+    color: #000000;
+    background-color: #a7a7a7;
+}
+.seccionservicios p {
+    margin: auto;
+}
+
+.seccionhistoria {
+    font-size: 1.1rem;
     display: flex;
-    min-height: 100vh;
-    flex-wrap: wrap;
-  
+    flex-direction: column;
+    text-align: center;
+    background-image: url(../img/felix-itb1TbV5H7w-unsplash.jpg);
 }
 
-.textohistoria {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color:beige;
-}
-
-.titulohistoria {
-    color:#c1bbb2;
-    font-size:3rem;
-}
-
-.bodyinicio {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5REM;
-    background: url(/img/jorgen-hendriksen-HsB4t2NvtLo-unsplash\ \(1\).jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    min-height: 100vh;
-    flex-wrap: wrap;
-}
-.citainicio {
-    font-size: 4.5rem;
-    font-weight: bold;
-    color:rgb(189, 179, 179);
-    margin-right: 105rem;
-    margin-left: 2rem;
-}
-
-.bodyservicios {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5REM;
-    background: url(../img/The\ Bimmer\ Blog.jfif);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    min-height: 100vh;
-    flex-wrap: wrap;
-}
-
-.servicios h1 {
-    font-size: 8rem;
-    color: #c1bbb2;
-    font-weight:bold;
-}
-.servicios p {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: aliceblue;
-}
-.servicios h2 {
+.seccionhistoria h2 {
     font-size: 3rem;
-    font-weight: bold;
-    color: #c1bbb2;
+    margin-bottom: 1rem;
+}
+
+.seccionhistoria p {
+    line-height: 1.8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.secciongaleria {
+    background-image: url(../img/roman-khripkov-PzCGId2ljsY-unsplash\ \(1\).jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .galeria {
@@ -154,22 +229,13 @@ a {
     padding: 5px;
 }
 
+.galeria img {
+    height: 15rem;
+}
+
 .columna {
     flex: 15%;
     padding: 3%
-}
-
-.bodycontacto {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    background: url(../img/haidong-liang-hcYPuEkX5Bc-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    min-height: 100vh;
-    flex-wrap: wrap;
 }
 
 .formulario {
@@ -187,3 +253,4 @@ a {
     color: #c1bbb2;
     font-weight: bold;
 }
+
