@@ -1,0 +1,29 @@
+.seccionservicios {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    text-align: center;
+    background-image: url("../img/amir-hosseini-p_bGwG123v0-unsplash.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.seccionservicios h1 {
+    color: #000000;
+    background-color: #474747;
+    padding: 1rem;
+    width: 15rem;
+    margin: auto;
+    margin-top: 1rem;
+    
+}
+.seccionservicios h2{
+    color: #000000;
+    background-color: #a7a7a7;
+}
+.seccionservicios p {
+    margin: auto;
+}

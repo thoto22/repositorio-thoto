@@ -1,0 +1,31 @@
+.seccion-contacto {
+    display: flex;
+    flex-direction:column;
+}
+
+
+.formulario {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #c1bbb2;
+    font-weight: bold;
+    background-color: #000000;
+    margin: 2rem;
+    text-align: center;
+    width: 20rem;
+    
+}
+
+.seccionmapa {
+    font-size: 2rem;
+    color: #c1bbb2;
+    font-weight: bold;
+    margin: 2rem;
+    background-color: #000000;
+    justify-content: center;
+    width: 30rem;
+}
+
+.seccionmapa iframe {
+    height: 15rem;
+}

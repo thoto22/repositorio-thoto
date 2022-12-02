@@ -1,0 +1,21 @@
+.secciongaleria {
+    background-image: url("../img/roman-khripkov-PzCGId2ljsY-unsplash\ \(1\).jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.galeria {
+    display: flex;
+    padding: 5px;
+}
+
+.galeria img {
+    height: 15rem;
+}
+
+.columna {
+    flex: 15%;
+    padding: 3%
+}

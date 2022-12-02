@@ -1,314 +1,319 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
+
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
+
 body {
-    font-family:'Montserrat', sans-serif;
-    font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
 }
-
-#grilla {
-    display: grid;
-    grid-template-areas:
-    "nav header header"
-    "nav section section"
-    "nav section section"
-    "footer footer footer";
-    grid-template-rows: 100px 400px auto 200px ;
-    grid-template-columns: 100px auto 100px;
-    column-gap: 10px;
-    row-gap: 10px;
-    padding: 0.5%;
-}
-
 
 nav {
-    grid-area: nav;
-    background-image: linear-gradient(to left, #ffffff, #6e6e6e);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    line-height: 6rem;
-    font-weight: bold;
-    font-size: 0.9rem;
+  grid-area: nav;
+  background-image: linear-gradient(to left, #ffffff, #6e6e6e);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 6rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+nav ul {
+  padding-left: 1.2rem;
 }
 
 li {
-    margin-left: 0.5rem;
-    list-style: none;
-    transition: margin-left 1s;
+  margin-right: 3rem;
+  list-style: none;
+  transition: margin-left 1s;
 }
+
 li:hover {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 a {
-    text-decoration: none;
-    list-style: none;
-    color:#000000;
-    padding: 0.8rem;
+  text-decoration: none;
+  list-style: none;
+  color: #000000;
+  justify-content: left;
 }
 
 header {
-    grid-area: header;
-    background-image: linear-gradient(to right, #ffffff, #2a2727);
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
+  grid-area: header;
+  background-image: linear-gradient(to right, #ffffff, #2a2727);
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
 }
+
 section {
-    grid-area: section;
-    background-image:url("../img/jorgen-hendriksen-HsB4t2NvtLo-unsplash\ \(1\).jpg");
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color:rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row;
-}
-
-.seccionindex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.seccionindex q {
-    justify-content: right;
-    margin-left: 20rem;
-    transition: margin-left 1s;
-}
-
-.seccionindex q:hover {
-    margin-left: 3rem;
-}
-
-.seccionindex h1 {
-    transition: margin-left 1s;
-}
-
-.seccionindex h1:hover {
-    margin-left: 5rem;
+  grid-area: section;
+  background-image: url("../img/jorgen-hendriksen-HsB4t2NvtLo-unsplash (1).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
 }
 
 footer {
-    grid-area: footer;
-    background-image: linear-gradient(to right, #ffffff, #474747);
-    text-align: center;
+  grid-area: footer;
+  background-image: linear-gradient(to right, #ffffff, #474747);
+  text-align: center;
 }
 
-.grupo1 {
-    width: 100%;
-    margin-top: 1rem;
-    color: #000000;
-    font-weight: bold;
-    font-size: 0.9rem;
+#grilla {
+  display: grid;
+  grid-template-areas: "nav header header" "nav section section" "nav section section" "footer footer footer";
+  grid-template-rows: 100px 400px auto 200px;
+  grid-template-columns: 110px auto 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 0.5%;
 }
 
-.redessociales {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 1rem;
+#carouselExampleIndicators {
+  width: 50%;
+  margin: 1rem auto;
 }
-.derechosreservados {
-    font-size: 0.7rem;
+
+.navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 6rem;
 }
 
 .logo {
-    height: 5.5rem;
-    margin-right: 0rem;
-    margin-top: 0rem;
-    max-width: 100%;
-    transition: height 2s; 
-    padding: 0.3rem;
+  height: 5.5rem;
+  margin-right: 0rem;
+  margin-top: 0rem;
+  max-width: 100%;
+  transition: height 2s;
+  padding: 0.3rem;
 }
 
 .logo:hover {
-    height: 5.8rem;
+  height: 5.8rem;
+}
+
+.grupo1 {
+  width: 100%;
+  margin-top: 1rem;
+  color: #000000;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.redessociales {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+
+.redessociales h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.derechosreservados {
+  font-size: 0.7rem;
+  margin-top: 1.5rem;
 }
 
 @media screen and (max-width: 480px) {
-    body {
-        background-color: #000000;
-    }
-    
-    #grilla {
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "section"
-        "footer";
-        grid-template-rows: repeat(4, auto);
-        grid-template-columns: 100%;
-        row-gap: 10px;
-        padding: 0.5%;
-        width: 100%;
-    }
-    
-    .seccionindex {
-        font-size: 1rem;
-        line-height: 10rem;
-    }
+  body {
+    background-color: #000000;
+  }
+  #grilla {
+    display: grid;
+    grid-template-areas: "header" "nav" "section" "footer";
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 100%;
+    row-gap: 10px;
+    padding: 0.5%;
+    width: 100%;
+  }
+  .seccionindex {
+    font-size: 1rem;
+    line-height: 10rem;
+  }
+  .seccionindex q {
+    margin-left: 10rem;
+    line-height: normal;
+  }
+  .seccionindex h1 {
+    margin-top: 10rem;
+  }
+  .seccionindex iframe {
+    align-content: center;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+  .div-header {
+    justify-content: center;
+    padding: 3rem;
+  }
+  .seccion-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .seccionmapa p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .seccionmapa iframe {
+    justify-content: center;
+    padding: 3rem;
+  }
+}
+.seccionindex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    .seccionindex q {
-        margin-left: 10rem;
-        line-height:normal;
-    }
+.seccionindex q {
+  justify-content: right;
+  margin-left: 20rem;
+  transition: margin-left 1s;
+}
 
-    .seccionindex h1 {
-        margin-top: 10rem;
-    }
-    
-    .seccionindex iframe {
-        align-content: center;
-    }
+.seccionindex q:hover {
+  margin-left: 3rem;
+}
 
-    nav {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-    }
+.seccionindex h1 {
+  transition: margin-left 1s;
+}
 
-    footer {
-       text-align: center;
-    }
-
-    .div-header {
-        justify-content: center;
-        padding: 3rem;
-    }
-
-    .seccion-contacto {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .seccionmapa p {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .seccionmapa iframe {
-        justify-content: center;
-        margin-left: 2rem;
-        padding: 3rem;
-    }
-
-
-
+.seccionindex h1:hover {
+  margin-left: 5rem;
 }
 
 .seccionservicios {
-    font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    text-align: center;
-    background-image: url("../img/amir-hosseini-p_bGwG123v0-unsplash.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  text-align: center;
+  background-image: url("../img/amir-hosseini-p_bGwG123v0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .seccionservicios h1 {
-    color: #000000;
-    background-color: #474747;
-    padding: 1rem;
-    width: 10rem;
-    margin: auto;
-    
+  color: #000000;
+  background-color: #474747;
+  padding: 1rem;
+  width: 15rem;
+  margin: auto;
+  margin-top: 1rem;
 }
-.seccionservicios h2{
-    color: #000000;
-    background-color: #a7a7a7;
+
+.seccionservicios h2 {
+  color: #000000;
+  background-color: #a7a7a7;
 }
+
 .seccionservicios p {
-    margin: auto;
+  margin: auto;
 }
 
 .seccionhistoria {
-    font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-image: url("../img/felix-itb1TbV5H7w-unsplash.jpg");
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("../img/felix-itb1TbV5H7w-unsplash.jpg");
 }
 
 .seccionhistoria h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .seccionhistoria p {
-    line-height: 1.8rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    max-width: 100%;
+  line-height: 1.8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  max-width: 100%;
 }
 
 .secciongaleria {
-    background-image: url("../img/roman-khripkov-PzCGId2ljsY-unsplash\ \(1\).jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-image: url("../img/roman-khripkov-PzCGId2ljsY-unsplash (1).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .galeria {
-    display: flex;
-    padding: 5px;
+  display: flex;
+  padding: 5px;
 }
 
 .galeria img {
-    height: 15rem;
+  height: 15rem;
 }
 
 .columna {
-    flex: 15%;
-    padding: 3%
+  flex: 15%;
+  padding: 3%;
 }
 
 .seccion-contacto {
-    display: flex;
-    flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
 
-
 .formulario {
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    color: #c1bbb2;
-    font-weight: bold;
-    background-color: #000000;
-    margin: 2rem;
-    text-align: center;
-    width: 20rem;
-    
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: #c1bbb2;
+  font-weight: bold;
+  background-color: #000000;
+  margin: 2rem;
+  text-align: center;
+  width: 20rem;
 }
 
 .seccionmapa {
-    font-size: 2rem;
-    color: #c1bbb2;
-    font-weight: bold;
-    margin: 2rem;
-    background-color: #000000;
-    justify-content: center;
-    width: 30rem;
+  font-size: 2rem;
+  color: #c1bbb2;
+  font-weight: bold;
+  margin: 2rem;
+  background-color: #000000;
+  justify-content: center;
+  width: 30rem;
 }
 
 .seccionmapa iframe {
-    height: 15rem;
+  height: 15rem;
 }
 
+/*# sourceMappingURL=styles.css.map */

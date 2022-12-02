@@ -1,0 +1,20 @@
+.seccionhistoria {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("../img/felix-itb1TbV5H7w-unsplash.jpg");
+}
+
+.seccionhistoria h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.seccionhistoria p {
+    line-height: 1.8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}

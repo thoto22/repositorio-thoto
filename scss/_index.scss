@@ -1,0 +1,23 @@
+.seccionindex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.seccionindex q {
+    justify-content: right;
+    margin-left: 20rem;
+    transition: margin-left 1s;
+}
+
+.seccionindex q:hover {
+    margin-left: 3rem;
+}
+
+.seccionindex h1 {
+    transition: margin-left 1s;
+}
+
+.seccionindex h1:hover {
+    margin-left: 5rem;
+}

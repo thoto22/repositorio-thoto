@@ -1,0 +1,210 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+nav {
+    grid-area: nav;
+    background-image: linear-gradient(to left, #ffffff, #6e6e6e);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 6rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+nav ul {
+    padding-left: 1.2rem;
+}
+
+li {
+    margin-right: 3rem;
+    list-style: none;
+    transition: margin-left 1s;
+}
+
+li:hover {
+    margin-left: 1rem;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color:#000000;
+    justify-content: left;
+}
+
+header {
+    grid-area: header;
+    background-image: linear-gradient(to right, #ffffff, #2a2727);
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    grid-area: section;
+    background-image:url("../img/jorgen-hendriksen-HsB4t2NvtLo-unsplash\ \(1\).jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    grid-area: footer;
+    background-image: linear-gradient(to right, #ffffff, #474747);
+    text-align: center;
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "nav header header"
+    "nav section section"
+    "nav section section"
+    "footer footer footer";
+    grid-template-rows: 100px 400px auto 200px ;
+    grid-template-columns: 110px auto 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 0.5%;
+}
+
+#carouselExampleIndicators {
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 6rem;
+}
+
+
+.logo {
+    height: 5.5rem;
+    margin-right: 0rem;
+    margin-top: 0rem;
+    max-width: 100%;
+    transition: height 2s; 
+    padding: 0.3rem;
+}
+
+.logo:hover {
+    height: 5.8rem;
+}
+
+.grupo1 {
+    width: 100%;
+    margin-top: 1rem;
+    color: #000000;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.redessociales {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+
+.redessociales h2 {
+     font-weight: bold;
+     font-size: 1.5rem;
+}
+
+.derechosreservados {
+    font-size: 0.7rem;
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: #000000;
+    }
+    
+    #grilla {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "section"
+        "footer";
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 100%;
+        row-gap: 10px;
+        padding: 0.5%;
+        width: 100%;
+    }
+    
+    .seccionindex {
+        font-size: 1rem;
+        line-height: 10rem;
+    }
+
+    .seccionindex q {
+        margin-left: 10rem;
+        line-height:normal;
+    }
+
+    .seccionindex h1 {
+        margin-top: 10rem;
+    }
+    
+    .seccionindex iframe {
+        align-content: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    footer {
+       text-align: center;
+    }
+
+    .div-header {
+        justify-content: center;
+        padding: 3rem;
+    }
+
+    .seccion-contacto {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccionmapa p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .seccionmapa iframe {
+        justify-content: center;
+        padding: 3rem;
+    }
+}
