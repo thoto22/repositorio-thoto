@@ -1,12 +1,12 @@
 .seccionindex {
-    display: flex;
-    flex-direction: column;
+    @include flex-columna-centrado;
     justify-content: space-between;
+    
 }
 
 .seccionindex q {
     justify-content: right;
-    margin-left: 20rem;
+    margin-bottom: 10rem;
     transition: margin-left 1s;
 }
 
@@ -15,9 +15,34 @@
 }
 
 .seccionindex h1 {
+    margin-bottom: 10rem;
     transition: margin-left 1s;
 }
 
 .seccionindex h1:hover {
     margin-left: 5rem;
 }
+
+.seccionindex p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    margin: 1rem;
+    transition: font-size 1s;
+}
+
+.seccionindex p:hover {
+    font-size: 1.7rem;
+}
+
+h3 {
+    text-align: center;
+    margin: 2rem;
+}
+
+.imagen-marcas {
+    width: 30rem;
+    margin: auto;
+}
+

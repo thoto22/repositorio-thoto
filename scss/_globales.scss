@@ -10,7 +10,6 @@ img {
 
 body {
     font-family:'Montserrat', sans-serif;
-    font-size: 1.5rem;
 }
 
 nav {
@@ -165,7 +164,7 @@ footer {
     }
 
     .seccionindex q {
-        margin-left: 10rem;
+        margin-left: rem;
         line-height:normal;
     }
 
@@ -193,18 +192,7 @@ footer {
     }
 
     .seccion-contacto {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-columna-centrado
     }
 
-    .seccionmapa p {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .seccionmapa iframe {
-        justify-content: center;
-        padding: 3rem;
-    }
 }

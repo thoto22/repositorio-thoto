@@ -10,7 +10,6 @@ img {
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
 }
 
 nav {
@@ -153,7 +152,7 @@ footer {
     line-height: 10rem;
   }
   .seccionindex q {
-    margin-left: 10rem;
+    margin-left: rem;
     line-height: normal;
   }
   .seccionindex h1 {
@@ -177,26 +176,19 @@ footer {
   .seccion-contacto {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  .seccionmapa p {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  .seccionmapa iframe {
     justify-content: center;
-    padding: 3rem;
   }
 }
 .seccionindex {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   justify-content: space-between;
 }
 
 .seccionindex q {
   justify-content: right;
-  margin-left: 20rem;
+  margin-bottom: 10rem;
   transition: margin-left 1s;
 }
 
@@ -205,11 +197,35 @@ footer {
 }
 
 .seccionindex h1 {
+  margin-bottom: 10rem;
   transition: margin-left 1s;
 }
 
 .seccionindex h1:hover {
   margin-left: 5rem;
+}
+
+.seccionindex p {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  background-color: black;
+  margin: 1rem;
+  transition: font-size 1s;
+}
+
+.seccionindex p:hover {
+  font-size: 1.7rem;
+}
+
+h3 {
+  text-align: center;
+  margin: 2rem;
+}
+
+.imagen-marcas {
+  width: 30rem;
+  margin: auto;
 }
 
 .seccionservicios {
@@ -291,29 +307,18 @@ footer {
   flex-direction: column;
 }
 
-.formulario {
-  font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-  color: #c1bbb2;
-  font-weight: bold;
-  background-color: #000000;
-  margin: 2rem;
+.seccion-contacto p {
+  margin: 3rem;
+  font-size: 1.5rem;
   text-align: center;
-  width: 20rem;
 }
 
-.seccionmapa {
-  font-size: 2rem;
+.formulario {
   color: #c1bbb2;
   font-weight: bold;
-  margin: 2rem;
   background-color: #000000;
-  justify-content: center;
-  width: 30rem;
-}
-
-.seccionmapa iframe {
-  height: 15rem;
+  margin-bottom: 5rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
